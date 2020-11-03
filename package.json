@@ -6,8 +6,13 @@
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^10.0.1",
+    "postcss": "^8.1.4",
+    "sass": "^1.28.0"
+  },
+  "devDependencies": {
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
-    "sass": "^1.28.0"
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.1.0"
   }
 }
