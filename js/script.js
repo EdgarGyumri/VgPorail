@@ -1,36 +1,115 @@
-const accardeonHeader = document.querySelector('.profession-header');
-const allAccardeonHeaders = document.querySelectorAll('.profession-header')
-const accardeonBody = document.querySelector('.profession-body');
-const allAccardeonBodys = document.querySelectorAll('.profession-body')
-const profession = document.querySelector('.profession');
-const professionItem = document.querySelector('.profession-item')
+const allAccardeonHeaders = document.querySelectorAll('.profession-header');
+const profession = document.querySelector('.profession')
+const allAccardeonBodys = document.querySelectorAll('.profession-body');
+const allProfessionImgs = document.querySelectorAll('.profession-img');
+const resultBody = document.querySelector('.result-body');
+const allResultBodys = document.querySelectorAll('.result__body');
+const allResultItems = document.querySelectorAll('.result-body__item')
 
 
-profession.addEventListener('click', event => {
+
+function collapseMakerOne(event) {
 	let target = event.target;
 
+
 	if(target.classList.contains('profession-header')) {
-		allAccardeonBodys.forEach(item => {
-			item.classList.remove('opened')
-		})
-		allAccardeonHeaders.forEach(item => {
-			item.classList.remove('border')
-		})
-		let firstTarget = target.nextElementSibling;
-		firstTarget.classList.toggle('opened');
-		target.classList.toggle('border')
+		if(target.nextElementSibling.classList.contains('opened')) {
+			target.nextElementSibling.classList.toggle('opened')
+			target.classList.toggle('border');
+			target.lastElementChild.classList.toggle('transform');
+		}else {
+			allAccardeonBodys.forEach(item => {
+				item.classList.remove('opened')
+			})
+			allAccardeonHeaders.forEach(item => {
+				item.classList.remove('border')
+			})
+			allProfessionImgs.forEach(item => {
+				item.classList.remove('transform')
+			})
+			let firstTarget = target.nextElementSibling;
+			firstTarget.classList.toggle('opened');
+			target.classList.toggle('border');
+			target.lastElementChild.classList.toggle('transform');
+		}
 	}else if(target.parentNode.classList.contains('profession-header')) {
-		allAccardeonBodys.forEach(item => {
-			item.classList.remove('opened')
-		})
-		allAccardeonHeaders.forEach(item => {
-			item.classList.remove('border')
-		})
-		let secondTarget = target.parentNode.nextElementSibling;
-		secondTarget.classList.toggle('opened');
-		target.parentNode.classList.toggle('border');
-	}else {
-		accardeonHeader.style.borderBottomRightRadius = '15px';
-		accardeonHeader.style.borderBottomLeftRadius = '15px';
+		if(target.parentNode.nextElementSibling.classList.contains('opened')) {
+			target.parentNode.nextElementSibling.classList.toggle('opened');
+			target.parentNode.classList.toggle('border');
+			target.parentNode.lastElementChild.classList.toggle('transform');
+		}else{
+			allAccardeonBodys.forEach(item => {
+				item.classList.remove('opened')
+			})
+			allAccardeonHeaders.forEach(item => {
+				item.classList.remove('border')
+			})
+			allProfessionImgs.forEach(item => {
+				item.classList.remove('transform')
+			})
+			let secondTarget = target.parentNode.nextElementSibling;
+			secondTarget.classList.toggle('opened');
+			target.parentNode.classList.toggle('border');
+			target.parentNode.lastElementChild.classList.toggle('transform');
+		}
 	}
+}
+
+function collapseMakerTwo(event) {
+	let target = event.target;
+
+	if(target.classList.contains('result-body__item')) {
+		if(target.nextElementSibling.classList.contains('result-opened')) {
+			target.nextElementSibling.classList.remove('result-opened');
+			target.classList.remove('border');
+			console.log('Yes')
+			target.lastElementChild.classList.remove('transform');
+		}else {
+			console.log('Yes 2')
+			allResultBodys.forEach(item => {
+				item.classList.remove('result-opened')
+			})
+			allResultItems.forEach(item => {
+				item.classList.remove('border')
+			})
+			allProfessionImgs.forEach(item => {
+				item.classList.remove('transform')
+			})
+			let firstTarget = target.nextElementSibling;
+			firstTarget.classList.toggle('result-opened');
+			target.classList.toggle('border');
+			target.lastElementChild.classList.toggle('transform');
+		}
+	}else if(target.parentNode.classList.contains('result-body__item')) {
+		if(target.parentNode.nextElementSibling.classList.contains('result-opened')) {
+			console.log('Yes')
+			target.parentNode.nextElementSibling.classList.remove('result-opened');
+			target.parentNode.classList.remove('border');
+			target.parentNode.lastElementChild.classList.remove('transform');
+		}else{
+			console.log('Yes 2')
+			allResultBodys.forEach(item => {
+				item.classList.remove('result-opened')
+			})
+			allResultItems.forEach(item => {
+				item.classList.remove('border')
+			})
+			allProfessionImgs.forEach(item => {
+				item.classList.remove('transform')
+			})
+			let secondTarget = target.parentNode.nextElementSibling;
+			secondTarget.classList.toggle('result-opened');
+			target.parentNode.classList.toggle('border');
+			target.parentNode.lastElementChild.classList.toggle('transform');
+		}
+	}
+}
+
+profession.addEventListener('click', event => {
+	collapseMakerOne(event)
+})
+
+
+resultBody.addEventListener('click', event => {
+	collapseMakerTwo(event)
 })
