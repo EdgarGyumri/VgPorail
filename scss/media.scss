@@ -171,15 +171,18 @@
 			left: 70px;
 		}
 	}
+	.instruction{
+
+	}
 }
 
 @media screen and (max-width: 480px) {
 	.container, .header-container{
-		width:380px;
+		width: 300px;
 	}
 	.offer{
 		&-text{
-			width: 380px;
+			width: 300px;
 		}
 	}
 	.header{
@@ -195,18 +198,30 @@
 		}
 	}
 	.instruction{
-		&-item:nth-child(2){
-			width: 380px;
+		&-title{
+			text-align: left;
+			width: 300px;
+		}
+		&-block{
+			width: 300px;
 		}
 		&-item{
-			&__text:nth-child(2) {
-				width: 380px;
+			margin: 0;
+			text-align: left;
+			width:  300px;
+			&__text:nth-child(2), &__background{
+				width: 300px;
 			}
 		}
 	}
 	.profession{
 		&-item:nth-child(2) {
 			margin-top: 18px;
+		}
+		&-send{
+			&__button{
+				width: 300px;
+			}
 		}
 	}
 	.result{
@@ -219,7 +234,7 @@
 		&-item:nth-child(2){
 			margin-top: 20px;
 		}
-		&-item{
+		&-item, &__body{
 			width: 380px;
 		}
 	}

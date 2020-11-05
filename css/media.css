@@ -160,27 +160,36 @@
 
 @media screen and (max-width: 480px) {
   .container, .header-container {
-    width: 380px; }
+    width: 300px; }
   .offer-text {
-    width: 380px; }
+    width: 300px; }
   .header__menu {
     left: 25px;
     top: 20px;
     text-align: center; }
   .navbar-block {
     margin-left: 50px; }
-  .instruction-item:nth-child(2) {
-    width: 380px; }
-  .instruction-item__text:nth-child(2) {
-    width: 380px; }
+  .instruction-title {
+    text-align: left;
+    width: 300px; }
+  .instruction-block {
+    width: 300px; }
+  .instruction-item {
+    margin: 0;
+    text-align: left;
+    width: 300px; }
+    .instruction-item__text:nth-child(2), .instruction-item__background {
+      width: 300px; }
   .profession-item:nth-child(2) {
     margin-top: 18px; }
+  .profession-send__button {
+    width: 300px; }
   .result-body__item {
     width: 380px;
     margin: 0 auto; }
   .result-item:nth-child(2) {
     margin-top: 20px; }
-  .result-item {
+  .result-item, .result__body {
     width: 380px; }
   .footer-block__link:first-child {
     margin-right: 0px; }
