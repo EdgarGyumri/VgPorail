@@ -89,26 +89,67 @@ body{
 }
 
 .header-container{
-	width: 1200px;
+	width: 1250px;
 	margin: 0 auto;
 }
 
 .header{
 	padding: 10px 0px;
+	position: relative;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	&-body{
+		display: flex;
+		position: relative;
+		z-index: 2;
+	}
+	&__menu{
+		display: flex;
+		align-items: center;
+	}
+	&__link{
+		text-decoration: none;
+		color: #4b4b4b;
+		font-family: "FuturaPT-BookObl";
+		font-size: 19px;
+		margin-right: 40px;	
+		display: block;	
+	}
+	&__link:hover{
+		border-bottom: 2px solid #c31b27;
+	}
+}
+
+.header:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
 }
 
 .navbar{
 	display: flex;
 	justify-content: space-between;
+	&-item{
+		display: flex;
+	}
 	&-block{
 		display: flex;
 		align-items: center;
 	}
-	&-line{		
-		display: inline;
+	&-line{
+		display: block;
 		width: 1px;
 		height: 100px;
 		background-color: #ebebeb;
+	}
+	&-line:first-child{
+		margin: 0px 30px 0px 30px;
 	}
 	&-text{
 		color: #4b4b4b;
@@ -119,13 +160,16 @@ body{
 		transition: .4s;
 	}
 	&-text:last-child{
-		margin-right: 0;
+		margin-right: 30px;
 	}
 	&-text:first-child{
 		margin-left: -5px;
 	}
 	&-text:hover{
 		border-bottom: 2px solid #d02935;
+	}
+	&-brand:first-child{
+		margin-left: 30px;
 	}
 	&-brand{
 		border-radius: 50px;
@@ -197,6 +241,9 @@ body{
 			font-family: "FuturaPT-BookObl";
 			font-size: 20px;
 			color: #595959;
+		}
+		&__text:nth-child(2){
+			width: 420px;
 		}
 	}
 }
@@ -399,4 +446,12 @@ body{
 
 .transform {
 	transform: translate(-11px, 0px) rotate(180deg);
+}
+
+.nav-opened{
+	display: block !important;
+}
+
+.navbar-active{
+	top: 90px !important;
 }

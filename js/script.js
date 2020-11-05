@@ -1,10 +1,14 @@
+const headerBurger = document.querySelector('.header__burger');
+const headerNav = document.querySelector('.header-nav');
+const headerMenu = document.querySelector('.header__menu');
+const headerBlock = document.querySelector('.navbar-block');
 const allAccardeonHeaders = document.querySelectorAll('.profession-header');
-const profession = document.querySelector('.profession')
+const profession = document.querySelector('.profession');
 const allAccardeonBodys = document.querySelectorAll('.profession-body');
 const allProfessionImgs = document.querySelectorAll('.profession-img');
 const resultBody = document.querySelector('.result-body');
 const allResultBodys = document.querySelectorAll('.result__body');
-const allResultItems = document.querySelectorAll('.result-body__item')
+const allResultItems = document.querySelectorAll('.result-body__item');
 
 
 
@@ -112,4 +116,15 @@ profession.addEventListener('click', event => {
 
 resultBody.addEventListener('click', event => {
 	collapseMakerTwo(event)
+})
+
+headerBurger.addEventListener('click', () => {
+	headerNav.classList.toggle('navbar-active')
+	if(headerMenu.classList.contains('nav-opened')) {
+		headerMenu.classList.remove('nav-opened')
+		headerBlock.classList.remove('nav-opened')
+	}else {
+		headerMenu.classList.add('nav-opened')
+		headerBlock.classList.add('nav-opened')
+	}
 })

@@ -55,11 +55,50 @@ body {
   margin: 0 auto; }
 
 .header-container {
-  width: 1200px;
+  width: 1250px;
   margin: 0 auto; }
 
 .header {
-  padding: 10px 0px; }
+  padding: 10px 0px;
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50; }
+  .header-body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    z-index: 2; }
+  .header__menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .header__link {
+    text-decoration: none;
+    color: #4b4b4b;
+    font-family: "FuturaPT-BookObl";
+    font-size: 19px;
+    margin-right: 40px;
+    display: block; }
+  .header__link:hover {
+    border-bottom: 2px solid #c31b27; }
+
+.header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; }
 
 .navbar {
   display: -webkit-box;
@@ -70,6 +109,11 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  .navbar-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
   .navbar-block {
     display: -webkit-box;
     display: -webkit-flex;
@@ -80,10 +124,12 @@ body {
         -ms-flex-align: center;
             align-items: center; }
   .navbar-line {
-    display: inline;
+    display: block;
     width: 1px;
     height: 100px;
     background-color: #ebebeb; }
+  .navbar-line:first-child {
+    margin: 0px 30px 0px 30px; }
   .navbar-text {
     color: #4b4b4b;
     font-family: "FuturaPT-BookObl";
@@ -94,11 +140,13 @@ body {
     -o-transition: .4s;
     transition: .4s; }
   .navbar-text:last-child {
-    margin-right: 0; }
+    margin-right: 30px; }
   .navbar-text:first-child {
     margin-left: -5px; }
   .navbar-text:hover {
     border-bottom: 2px solid #d02935; }
+  .navbar-brand:first-child {
+    margin-left: 30px; }
   .navbar-brand {
     border-radius: 50px;
     padding: 10px;
@@ -170,6 +218,8 @@ body {
       font-family: "FuturaPT-BookObl";
       font-size: 20px;
       color: #595959; }
+    .instruction-item__text:nth-child(2) {
+      width: 420px; }
 
 .profession {
   z-index: 5;
@@ -410,3 +460,9 @@ body {
   -webkit-transform: translate(-11px, 0px) rotate(180deg);
       -ms-transform: translate(-11px, 0px) rotate(180deg);
           transform: translate(-11px, 0px) rotate(180deg); }
+
+.nav-opened {
+  display: block !important; }
+
+.navbar-active {
+  top: 90px !important; }
