@@ -174,11 +174,41 @@
 	.instruction{
 
 	}
+	.filtres{
+		&-block{
+			&__title{
+				text-align: center;
+			}
+			&__header{
+				&__item{
+					width: 70%;
+				}
+			}
+			&__element{
+				&__item{
+					flex-direction: column;
+					margin-top: 0;
+				}
+			}
+			&__skills{
+				width: 50%;
+				margin: 0px auto 20px;
+				height: 100px;
+				padding-left: 0;
+				&__item{
+					justify-content: center;
+				}
+			}
+		}
+		&-opened{
+			max-height: 1750px;
+		}
+	}
 }
 
 @media screen and (max-width: 480px) {
 	.container, .header-container{
-		width: 300px;
+		width: 350px;
 	}
 	.offer{
 		&-text{
@@ -237,6 +267,12 @@
 		&-item, &__body{
 			width: 380px;
 		}
+		&-header{
+			flex-direction: column;
+		}
+		&-title{
+			text-align: center;
+		}
 	}
 	.footer{
 		&-block{
@@ -247,6 +283,29 @@
 				width: 380px;
 				text-align: center;
 			}
+		}
+	}
+	.filtres{
+		&-block{
+			&__skills{
+				width: 70%;
+			}
+			&__header{
+				&__item{
+					width: 100%;
+				}
+		}
+		}
+		&-professions{
+			&__element{
+				flex-direction: column;
+			}
+			&__text{
+				width: 200px;
+			}
+		}
+		&-opened{
+			max-height: 2150px;
 		}
 	}
 }

@@ -432,10 +432,163 @@ body{
 	}
 }
 
+.filtres{
+	padding-top: 70px;
+	padding-bottom: 70px;
+	&-navigation{
+		&__item{
+			color: #be1622;
+			font-family: "FuturaPT-Light";
+			font-size: 18px;
+			display: flex;
+			align-items: center;
+			a{
+				text-decoration: none;
+				color: #be1622;
+			}
+			span{
+				display: block;
+				width: 5px;
+				height: 5px;
+				background-color: #c31b27;
+				border-radius: 50px;
+				margin: 0px 20px;
+			}
+		}
+		&__current{
+			color: #4b4b4b;
+		}
+	}
+	&-header{
+		&__title{
+			color: #3d3d3d;
+			font-family: "FuturaPT-HeavyObl";
+			font-size: 39px;
+		}
+		&__subtitle{
+			color: #505050;
+			font-family: "FuturaPT-DemiObl";
+			font-size: 27px;
+			line-height: 0;
+		}
+		&__item{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&__link{
+			color: #be1622;
+			font-family: "FuturaPT-DemiObl";
+			font-size: 23px;
+		}
+	}
+	&-block{
+		&__item{
+			margin-bottom: 30px;
+		}
+		&__title{
+			color: #505050;
+			font-family: "Futura PT";
+			font-size: 18px;
+		}
+		&__skill{
+			margin-top: 50px;
+		}
+		&__skills{
+			width: 23%;
+			height: 120px;
+			background-color: #fff;
+			border-radius: 15px;
+			padding-left: 25px;
+			&__checkbox{
+				width: 18px;
+				height: 18px;
+				background-image: url('../img/checkbox-1.png');
+				margin-right: 8px;
+			}
+			&__item{
+				display: flex;
+			}
+			&__text, &__checkbox{
+				margin-top: 0;
+				padding-top: 0;
+			}
+		}
+		&__element{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			&__item{
+				margin-top: 20px;
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+		&__header{
+			box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+			border-radius: 15px;
+			background-color: #ffffff;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			cursor: pointer;
+			&__item{
+				width: 50%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 15px 25px;
+				p:first-child{
+					color: #505050;
+					font-family: "FuturaPT-Medium";
+					font-size: 23px;
+				}
+				p:last-child{
+					color: #4b4b4b;
+					font-family: "FuturaPT-Medium";
+					font-size: 23px;
+				}
+			}
+		}
+	}
+	&-img{
+		padding-right: 40px;
+	}
+	&-professions{
+		padding-top: 50px;
+		padding-bottom: 40px;
+		padding-left: 10px;
+		&__title{
+			color: #505050;
+			font-family: "FuturaPT-DemiObl";
+			font-size: 27px;
+		}
+		&__element{
+			display: flex;
+		}
+		&__block:first-child{
+			margin-right: 113px;
+			margin-left: 10px;
+		}
+		&__text{
+			color: #505050;
+			font-family: "FuturaPT-Medium";
+			font-size: 23px;
+		}
+	}
+}
+
 /* General styles */
 
 .result-opened{
 	max-height: 150px;
+}
+
+.filtres-opened{
+	max-height: 1000px;
+	padding: 30px 30px 0px 40px;
+	width: 100%;
+	background-color: #f4f4f4;
 }
 
 .opened{

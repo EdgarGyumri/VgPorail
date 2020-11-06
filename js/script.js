@@ -11,7 +11,6 @@ const allResultBodys = document.querySelectorAll('.result__body');
 const allResultItems = document.querySelectorAll('.result-body__item');
 
 
-
 function collapseMakerOne(event) {
 	let target = event.target;
 

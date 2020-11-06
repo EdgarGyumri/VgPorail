@@ -156,11 +156,34 @@
   .navbar-link:last-child {
     top: 95px; }
   .header__menu {
-    left: 70px; } }
+    left: 70px; }
+  .filtres-block__title {
+    text-align: center; }
+  .filtres-block__header__item {
+    width: 70%; }
+  .filtres-block__element__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0; }
+  .filtres-block__skills {
+    width: 50%;
+    margin: 0px auto 20px;
+    height: 100px;
+    padding-left: 0; }
+    .filtres-block__skills__item {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+  .filtres-opened {
+    max-height: 1750px; } }
 
 @media screen and (max-width: 480px) {
   .container, .header-container {
-    width: 300px; }
+    width: 350px; }
   .offer-text {
     width: 300px; }
   .header__menu {
@@ -191,8 +214,30 @@
     margin-top: 20px; }
   .result-item, .result__body {
     width: 380px; }
+  .result-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .result-title {
+    text-align: center; }
   .footer-block__link:first-child {
     margin-right: 0px; }
   .footer-block__link {
     width: 380px;
-    text-align: center; } }
+    text-align: center; }
+  .filtres-block__skills {
+    width: 70%; }
+  .filtres-block__header__item {
+    width: 100%; }
+  .filtres-professions__element {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .filtres-professions__text {
+    width: 200px; }
+  .filtres-opened {
+    max-height: 2150px; } }
