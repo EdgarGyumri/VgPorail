@@ -597,6 +597,173 @@ body{
 	}
 }
 
+.prof{
+	padding: 150px 0px 180px;
+	background: #f4f4f4;
+	position: relative;
+	&-block{
+		display: flex;
+		&__title{
+			color: #3d3d3d;
+			font-family: "FuturaPT-Bold";
+			font-size: 55px;
+			width: 570px;
+			margin: 0;
+		}
+		&__text{
+			color: #595959;
+			font-family: "FuturaPT-Medium";
+			font-size: 28px;
+			margin-bottom: 40px;
+		}
+		&__item:last-child{
+			position: absolute;
+			right: 5%;
+			top: 45px;
+		}
+		&__img{
+			width: 834px;
+			height: 551px;
+		}
+	}
+}
+
+.orientation{
+	padding: 205px 0px 180px;
+	position: relative;
+	background: #ffffff;
+	&-block{
+		display: flex;
+		justify-content: end;
+		align-items: center;
+		&__item:first-child{
+			position: absolute;
+			left: 0;
+		}
+		&__item:last-child{
+			// display: flex;
+			// flex-direction: column;
+			// justify-content: end;
+		}
+	}
+}
+
+.why{
+	background: #f4f4f4;
+	padding: 95px 0px;
+	&__title{
+		text-align: center;
+		color: #3d3d3d;
+		font-family: "FuturaPT-HeavyObls";
+		font-size: 39px;
+		margin-bottom: 80px;
+	}
+	&-block{
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+		&__title{
+			color: #505050;
+			font-family: "FuturaPT-DemiObl";
+			font-size: 27px;
+			line-height: 0;
+		}
+		&__text{
+			color: #4b4b4b;
+			width: 220px;
+			font-family: "FuturaPT-BookObl";
+			font-size: 20px;
+		}
+	}
+}
+
+.youtube{
+	padding: 65px 0px 115px;
+	&-block:first-child{
+		p{
+			text-decoration: underline;
+		}
+	}
+	&-block{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&__img{
+			border-radius: 20px;
+		}
+		&__text{
+			color: #4b4b4b;
+			font-family: "FuturaPT-BookObl";
+			font-size: 20px;
+			width: 190px;
+		}
+	}
+}
+
+.question{
+	position: relative;
+	background: #f4f4f4;
+	padding-top: 82px;
+	.container{
+		width: 1260px;
+	}
+	&__title{
+		color: #565656;
+		font-family: "FuturaPT-HeavyObl";
+		font-size: 39px;
+		margin-left: 31%;
+	}
+	&-block{
+		display: flex;
+		justify-content: space-between;
+		&__info{
+			padding: 0px 25px 0px 40px;
+			margin-top: 30px;
+			border-radius: 37px;
+			background-color: #ffffff;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 410px;
+			height: 77px;
+			input{
+				width: 90%;
+				border: 0;
+				color: #414141;
+				font-family: "FuturaPT-BookObl";
+				font-size: 23px;
+			}
+			img{
+				box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+				padding: 12px 13px;
+				border-radius: 50px;
+			}
+		}
+		&__item{
+			a{
+				width: 410px;
+				margin-top: 17px;
+			}
+		}
+		&__answer{
+			height: 160px;
+			align-items: start;
+			padding-top: 25px;
+		}
+		&__text{
+			color: #868686;
+			font-family: "FuturaPT-BookObl";
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 18px;
+			img{
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
 /* General styles */
 
 .result-opened{

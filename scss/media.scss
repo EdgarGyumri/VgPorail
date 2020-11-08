@@ -140,6 +140,58 @@
 			} 
 		}
 	}
+	.prof{
+		&-block{
+			&__item:last-child{
+				display: none;
+			}
+		}
+	}
+	.orientation{
+		padding-top: 150px;
+		&-block{
+			position: relative;
+			justify-content: end;
+			&__item:first-child{
+				display: none;
+			}
+			&__item:last-child{
+				text-align: right;
+				a{
+					position: absolute;
+					right: 0;
+				}
+			}
+		}
+	}
+	.why{
+		&-block{
+			flex-wrap: wrap;
+			&__item:last-child{
+				margin: 20px auto 0px;
+			}
+		}
+	}
+	.youtube{
+		&-block:last-child{
+			flex-wrap: wrap;
+		}
+		&-block{
+			&__item:last-child{
+				margin: 20px auto 0px;
+			}
+		}
+	}
+	.question{
+		.container{
+			width: 800px;
+		}
+		&-block{
+			&__item:last-child{
+				display: none;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 800px) {
@@ -202,6 +254,78 @@
 		}
 		&-opened{
 			max-height: 1750px;
+		}
+	}
+	.orientation{
+		padding-top: 100px;
+	}
+	.why{
+		padding: 60px 0px 30px;
+		&-block{
+			&__item:nth-child(3){
+				margin: 30px 0px;
+			}
+			&__item:nth-child(4){
+				margin: 25px 0px;
+			}
+		}
+	}
+	.youtube{
+		padding: 50px 0px 80px;
+	}
+	.question{
+		padding-top: 40px;
+		.container{
+			width: 600px;
+		}
+		&__title{
+			margin-left: 0;
+			text-align: center;
+		}
+		&-block{
+			justify-content: center;
+			&__item:first-child{
+				display: none;
+			}
+			&__item{
+				a{
+				display: flex;
+				justify-content: center;
+				}
+			}
+		}
+	}
+	.prof{
+		&-block{
+			&__title{
+				font-size: 30px;
+				width: 310px;
+			}
+		}
+	}
+	.why{
+		&__title{
+			margin-bottom: 70px;
+		}
+		&-block{
+			text-align: none;
+			&__item{
+				margin: 0 auto;
+				text-align: center;
+			}
+			&__item:nth-child(2), &__item:nth-child(3), &__item:nth-child(4){
+				margin-top: 20px;
+			}
+			&__text{
+				margin: 0 auto;
+			}
+		}
+	}
+	.youtube{
+		&-block{
+			&__item{
+				margin: 0 auto;
+			}
 		}
 	}
 }
@@ -335,6 +459,18 @@
 		}
 		&-opened{
 			max-height: 2150px;
+		}
+	}
+	.youtube{
+		&-block{
+			a{
+				font-size: 20px;
+			}
+		}
+	}
+	.question{
+		.container{
+			width: 300px;
 		}
 	}
 }
