@@ -344,10 +344,29 @@
   .footer-block__link {
     width: 380px;
     text-align: center; }
+  .filtres-header__title {
+    font-size: 30px; }
+  .filtres-header__link {
+    margin-bottom: 30px; }
+  .filtres-header__item:first-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+        -ms-flex-align: start;
+            align-items: start; }
   .filtres-block__skills {
     width: 70%; }
   .filtres-block__header__item {
-    width: 100%; }
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .filtres-professions__element {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
