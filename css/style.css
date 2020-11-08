@@ -372,6 +372,27 @@ body {
     color: #be1622;
     font-family: "FuturaPT-Medium";
     font-size: 23px; }
+  .result-offer {
+    padding-top: 20px; }
+    .result-offer__title {
+      color: #505050;
+      font-family: "FuturaPT-DemiObl";
+      font-size: 27px; }
+    .result-offer__block {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 422px;
+      padding-top: 20px; }
+      .result-offer__block ol li {
+        color: #505050;
+        font-family: "FuturaPT-Medium";
+        font-size: 23px; }
   .result-block {
     display: -webkit-box;
     display: -webkit-flex;

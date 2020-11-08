@@ -366,6 +366,25 @@ body{
 		font-family: "FuturaPT-Medium";
 		font-size: 23px;
 	}
+	&-offer{
+		padding-top: 20px;
+		&__title{
+			color: #505050;
+			font-family: "FuturaPT-DemiObl";
+			font-size: 27px;
+		}
+		&__block{
+			display: flex;
+			justify-content: space-between;
+			width: 422px;
+			padding-top: 20px;
+			ol li{
+				color: #505050;
+				font-family: "FuturaPT-Medium";
+				font-size: 23px;
+			}
+		}
+	}
 	&-block{
 		display: flex;
 		justify-content: space-between;

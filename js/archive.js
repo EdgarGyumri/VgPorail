@@ -6,7 +6,7 @@ const filtresBlock = document.querySelector('.filtres-block');
 const allProfessionImgs = document.querySelectorAll('.profession-img');
 const allAccardeonHeaders = document.querySelectorAll('.filtres-block__header');
 const allAccardeonBodys = document.querySelectorAll('.profession-body');
-const filtresBlockHeader = document.querySelector('.filtres-block__header');
+const filtresBlockHeader = document.querySelector('.d');
 
 
 headerBurger.addEventListener('click', () => {
