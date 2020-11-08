@@ -474,3 +474,47 @@
 		}
 	}
 }
+
+@media screen and (max-width: 410px) {
+	.prof{
+		&-block{
+			&__item{
+				a{
+					height: 60px;
+					span{
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+	.orientation{
+		&-block{
+			&__item{
+				a{	
+					justify-content: space-between;
+					height: 60px;
+					span{
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+	.question{
+		&-block{
+			&__info{
+				width: 320px;
+				margin: 15px auto 0px;
+			}
+			&__item {
+				a{
+					width: 320px;
+				}
+				span{
+					font-size: 22px;
+				}
+			}
+		}
+	}
+}

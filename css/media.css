@@ -362,3 +362,24 @@
     font-size: 20px; }
   .question .container {
     width: 300px; } }
+
+@media screen and (max-width: 410px) {
+  .prof-block__item a {
+    height: 60px; }
+    .prof-block__item a span {
+      font-size: 16px; }
+  .orientation-block__item a {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 60px; }
+    .orientation-block__item a span {
+      font-size: 16px; }
+  .question-block__info {
+    width: 320px;
+    margin: 15px auto 0px; }
+  .question-block__item a {
+    width: 320px; }
+  .question-block__item span {
+    font-size: 22px; } }
