@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'FuturaPT-Light';
-  src: url('../fonts/FuturaPT-Light.eot');
-  src: url('../fonts/FuturaPT-Light.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/FuturaPT-Light.svg#FuturaPT-Light') format('svg'),
-       url('../fonts/FuturaPT-Light.ttf') format('truetype'),
-       url('../fonts/FuturaPT-Light.woff') format('woff'),
-       url('../fonts/FuturaPT-Light.woff2') format('woff2');
+  font-family: 'FuturaPT-Heavy';
+  src: url('../fonts/FuturaPT-Heavy.eot');
+  src: url('../fonts/FuturaPT-Heavy.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FuturaPT-Heavy.svg#FuturaPT-Heavy') format('svg'),
+       url('../fonts/FuturaPT-Heavy.ttf') format('truetype'),
+       url('../fonts/FuturaPT-Heavy.woff') format('woff'),
+       url('../fonts/FuturaPT-Heavy.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,37 +23,13 @@
 }
 
 @font-face {
-  font-family: 'FuturaPT-HeavyObl';
-  src: url('../fonts/FuturaPT-HeavyObl.eot');
-  src: url('../fonts/FuturaPT-HeavyObl.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/FuturaPT-HeavyObl.svg#FuturaPT-HeavyObl') format('svg'),
-       url('../fonts/FuturaPT-HeavyObl.ttf') format('truetype'),
-       url('../fonts/FuturaPT-HeavyObl.woff') format('woff'),
-       url('../fonts/FuturaPT-HeavyObl.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'FuturaPT-DemiObl';
-  src: url('../fonts/FuturaPT-DemiObl.eot');
-  src: url('../fonts/FuturaPT-DemiObl.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/FuturaPT-DemiObl.svg#FuturaPT-DemiObl') format('svg'),
-       url('../fonts/FuturaPT-DemiObl.ttf') format('truetype'),
-       url('../fonts/FuturaPT-DemiObl.woff') format('woff'),
-       url('../fonts/FuturaPT-DemiObl.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'FuturaPT-BookObl';
-  src: url('../fonts/FuturaPT-BookObl.eot');
-  src: url('../fonts/FuturaPT-BookObl.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/FuturaPT-BookObl.svg#FuturaPT-BookObl') format('svg'),
-       url('../fonts/FuturaPT-BookObl.ttf') format('truetype'),
-       url('../fonts/FuturaPT-BookObl.woff') format('woff'),
-       url('../fonts/FuturaPT-BookObl.woff2') format('woff2');
+  font-family: 'FuturaPT-Light';
+  src: url('../fonts/FuturaPT-Light.eot');
+  src: url('../fonts/FuturaPT-Light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FuturaPT-Light.svg#FuturaPT-Light') format('svg'),
+       url('../fonts/FuturaPT-Light.ttf') format('truetype'),
+       url('../fonts/FuturaPT-Light.woff') format('woff'),
+       url('../fonts/FuturaPT-Light.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -66,6 +42,30 @@
        url('../fonts/FuturaPT-Medium.ttf') format('truetype'),
        url('../fonts/FuturaPT-Medium.woff') format('woff'),
        url('../fonts/FuturaPT-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPT-Book';
+  src: url('../fonts/FuturaPT-Book.eot');
+  src: url('../fonts/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FuturaPT-Book.svg#FuturaPT-Book') format('svg'),
+       url('../fonts/FuturaPT-Book.ttf') format('truetype'),
+       url('../fonts/FuturaPT-Book.woff') format('woff'),
+       url('../fonts/FuturaPT-Book.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPT-Demi';
+  src: url('../fonts/FuturaPT-Demi.eot');
+  src: url('../fonts/FuturaPT-Demi.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FuturaPT-Demi.svg#FuturaPT-Demi') format('svg'),
+       url('../fonts/FuturaPT-Demi.ttf') format('truetype'),
+       url('../fonts/FuturaPT-Demi.woff') format('woff'),
+       url('../fonts/FuturaPT-Demi.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -115,7 +115,7 @@ body{
 	&__link{
 		text-decoration: none;
 		color: #4b4b4b;
-		font-family: "FuturaPT-BookObl";
+		font-family: "FuturaPT-Book";
 		font-size: 19px;
 		margin-right: 40px;	
 		display: block;	
@@ -156,7 +156,7 @@ body{
 	}
 	&-text{
 		color: #4b4b4b;
-		font-family: "FuturaPT-BookObl";
+		font-family: "FuturaPT-Book";
 		text-decoration: none;
 		font-size: 19px;
 		margin-right: 50px;
@@ -171,7 +171,7 @@ body{
 	&-text:hover{
 		border-bottom: 2px solid #d02935;
 	}
-	&-inst{
+	&-yout{
 		margin-left: 30px;
 	}
 	&-brand{
@@ -224,7 +224,7 @@ body{
 		padding-bottom: 40px;
 		text-align: center;
 		color: #3d3d3d;
-		font-family: "FuturaPT-HeavyObl";
+		font-family: "FuturaPT-Heavy";
 		font-size: 39px;
 	}
 	&-block{
@@ -241,7 +241,7 @@ body{
 			border-radius: 100px;
 		}
 		&__text{
-			font-family: "FuturaPT-BookObl";
+			font-family: "FuturaPT-Book";
 			font-size: 20px;
 			color: #595959;
 		}
@@ -256,7 +256,7 @@ body{
 	background-color: #f4f4f4;
 	padding: 85px 0px;
 	&-title{
-		font-family: "FuturaPT-DemiObl";
+		font-family: "FuturaPT-Demi";
 		font-size: 27px;
 		color: #505050;
 		padding-bottom: 40px;
@@ -317,7 +317,7 @@ body{
 			background-image: linear-gradient(51deg, #be1622 0%, #d62f3b 100%);
 			span{
 				color: #ffffff;
-				font-family: "FuturaPT-DemiObl";
+				font-family: "FuturaPT-Demi";
 				font-size: 25px;
 			}
 			img{
@@ -358,7 +358,7 @@ body{
 	}
 	&-title{
 		color: #3d3d3d;
-		font-family: "FuturaPT-HeavyObl";
+		font-family: "FuturaPT-Heavy";
 		font-size: 39px;
 	}
 	&-link{
@@ -370,7 +370,7 @@ body{
 		padding-top: 20px;
 		&__title{
 			color: #505050;
-			font-family: "FuturaPT-DemiObl";
+			font-family: "FuturaPT-Demi";
 			font-size: 27px;
 		}
 		&__block{
@@ -419,7 +419,7 @@ body{
 	&-block{
 		&__link{
 			color: #868686;
-			font-family: "FuturaPT-BookObl";
+			font-family: "FuturaPT-Book";
 			font-size: 18px;
 			text-decoration: underline;
 		}
@@ -428,7 +428,7 @@ body{
 		}
 		&__item:last-child{
 			color: #565656;
-			font-family: "FuturaPT-BookObl";
+			font-family: "FuturaPT-Book";
 			font-size: 18px;
 			text-align: right;
 			a{
@@ -443,11 +443,17 @@ body{
 		justify-content: space-between;
 		align-items: center;
 	}
-	&-block:last-child{
-		text-align: center;
+	&-block:nth-child(2), &-block:last-child{
+		display: flex;
+		justify-content: center;
 		color: #666666;
 		font-family: "FuturaPT-Light";
 		font-size: 17px;
+	}
+	&-block:last-child{
+		p:first-child{
+			margin-right: 40px;
+		}
 	}
 }
 
@@ -481,12 +487,12 @@ body{
 	&-header{
 		&__title{
 			color: #3d3d3d;
-			font-family: "FuturaPT-HeavyObl";
+			font-family: "FuturaPT-Heavy";
 			font-size: 39px;
 		}
 		&__subtitle{
 			color: #505050;
-			font-family: "FuturaPT-DemiObl";
+			font-family: "FuturaPT-Demi";
 			font-size: 27px;
 			line-height: 0;
 		}
@@ -497,7 +503,7 @@ body{
 		}
 		&__link{
 			color: #be1622;
-			font-family: "FuturaPT-DemiObl";
+			font-family: "FuturaPT-Demi";
 			font-size: 23px;
 		}
 	}
@@ -579,7 +585,7 @@ body{
 		padding-left: 10px;
 		&__title{
 			color: #505050;
-			font-family: "FuturaPT-DemiObl";
+			font-family: "FuturaPT-Demi";
 			font-size: 27px;
 		}
 		&__element{
@@ -652,7 +658,7 @@ body{
 	&__title{
 		text-align: center;
 		color: #3d3d3d;
-		font-family: "FuturaPT-HeavyObls";
+		font-family: "FuturaPT-Heavy";
 		font-size: 39px;
 		margin-bottom: 80px;
 	}
@@ -662,14 +668,14 @@ body{
 		text-align: center;
 		&__title{
 			color: #505050;
-			font-family: "FuturaPT-DemiObl";
+			font-family: "FuturaPT-Demi";
 			font-size: 27px;
 			line-height: 0;
 		}
 		&__text{
 			color: #4b4b4b;
 			width: 220px;
-			font-family: "FuturaPT-BookObl";
+			font-family: "FuturaPT-Book";
 			font-size: 20px;
 		}
 	}
@@ -691,7 +697,7 @@ body{
 		}
 		&__text{
 			color: #4b4b4b;
-			font-family: "FuturaPT-BookObl";
+			font-family: "FuturaPT-Book";
 			font-size: 20px;
 			width: 190px;
 		}
@@ -707,7 +713,7 @@ body{
 	}
 	&__title{
 		color: #565656;
-		font-family: "FuturaPT-HeavyObl";
+		font-family: "FuturaPT-Heavy";
 		font-size: 39px;
 		margin-left: 31%;
 	}
@@ -728,7 +734,7 @@ body{
 				width: 90%;
 				border: 0;
 				color: #414141;
-				font-family: "FuturaPT-BookObl";
+				font-family: "FuturaPT-Book";
 				font-size: 23px;
 			}
 			img{
@@ -741,6 +747,8 @@ body{
 			a{
 				width: 410px;
 				margin-top: 17px;
+				display: flex;
+				justify-content: center;
 			}
 		}
 		&__answer{
@@ -750,7 +758,7 @@ body{
 		}
 		&__text{
 			color: #868686;
-			font-family: "FuturaPT-BookObl";
+			font-family: "FuturaPT-Book";
 			display: flex;
 			align-items: center;
 			justify-content: center;
