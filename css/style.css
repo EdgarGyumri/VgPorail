@@ -94,6 +94,7 @@ body {
     margin-right: 40px;
     display: block; }
   .header__link:hover {
+    color: #be1622;
     border-bottom: 2px solid #c31b27; }
 
 .header:before {
