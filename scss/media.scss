@@ -1,3 +1,105 @@
+@media screen and (max-width: 1900px) {
+	.offer{
+		&-img{
+			width: 1400px;
+		}
+	}
+}
+@media screen and (max-width: 1750px) {
+	.prof{
+		&-block{
+			&__item:last-child{
+				width: 600px;
+			}
+		}
+	}
+	.orientation{
+		&-block{
+			&__item:first-child{
+				width: 600px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1420px) {
+	.header-container, .container{
+		width: 1000px;
+	}
+	.navbar{
+		&-logo{
+			margin-left: 10px;
+		}
+		&-brand{
+			margin-right: 5px;
+		}
+		&-inst{
+			margin-left: 10px;
+		}
+		&-line:first-child, &-line:last-child{
+			margin: 0px 10px;
+		}
+	}
+	.header{
+		&__link{
+			margin-right: 10px;
+		}
+	}
+	.offer{
+		&-img{
+			display: none;
+		}
+	}
+	.prof{
+		&-block{
+			&__item:last-child{
+				display: none;
+			}
+		}
+	}
+	.orientation{
+		&-block{
+			&__item:first-child{
+				width: 400px;
+			}
+			&__item:last-child{
+				h1{
+					text-align: right;
+					font-size: 45px;
+				}
+				p{
+					text-align: right;
+				}
+				a{
+					margin-left: auto;
+				}
+			}
+		}
+		&__img{
+			width: 550px;
+		}
+	}
+	.youtube{
+		&-block{
+			flex-wrap: wrap;
+			&__item:last-child{
+				margin: 10px auto 0px;
+			}
+		}
+	}
+	.question{
+		&__title{
+			margin-left: 65%;
+		}
+		.container{
+			width: 1000px;
+		}
+		&-block{
+			&__item:last-child{
+				display: none;
+			}
+		}
+	}
+}
 @media screen and (max-width: 1024px) {
 	.container, .header-container{
 		width:800px;
@@ -71,6 +173,7 @@
 		}
 		&-logo{
 			z-index: 50;
+			margin-left: 0;
 		}
 		&-line{
 			display: none;
@@ -186,6 +289,10 @@
 		.container{
 			width: 800px;
 		}
+		&__title{
+			margin-left: 58%;
+			font-size: 34px;
+		}
 		&-block{
 			&__item:last-child{
 				display: none;
@@ -199,13 +306,20 @@
 		width:600px;
 	}
 	.profession{
-		&-item:nth-child(3){
+		&-item{
+			margin: 0 auto;
+		}
+		&-item:nth-child(3), &-item:nth-child(2){
 			margin-top: 18px;
+		}
+		&-title{
+			text-align: center;
 		}
 		&-send{
 			flex-direction: column;
-			&__item:nth-child(2) {
-				margin: 30px 0px
+			align-items: center;
+			&__item:first-child{
+				margin-bottom: 20px;
 			}
 		}
 	}
@@ -223,10 +337,12 @@
 			left: 70px;
 		}
 	}
-	.instruction{
-
-	}
 	.filtres{
+		&-header{
+			&__title{
+				font-size: 30px;
+			}
+		}
 		&-block{
 			&__title{
 				text-align: center;
@@ -262,6 +378,7 @@
 		}
 		&-link{
 			font-size: 18px;
+			text-align: right;
 		}
 		&-offer{
 			padding-top: 0;
@@ -309,8 +426,7 @@
 	.prof{
 		&-block{
 			&__title{
-				font-size: 30px;
-				width: 310px;
+				font-size: 45px;
 			}
 		}
 	}
@@ -321,10 +437,9 @@
 		&-block{
 			text-align: none;
 			&__item{
-				margin: 0 auto;
 				text-align: center;
 			}
-			&__item:nth-child(2), &__item:nth-child(3), &__item:nth-child(4){
+			&__item:nth-child(3), &__item:nth-child(4){
 				margin-top: 20px;
 			}
 			&__text{
@@ -336,6 +451,51 @@
 		&-block{
 			&__item{
 				margin: 0 auto;
+			}
+		}
+	}
+	.instruction{
+		padding: 60px 0;
+	}
+}
+
+@media screen and (max-width: 630px) {
+	.header-container, .question .container, .container, .prof-block__item{
+		width: 500px;
+	}
+	.offer{
+		&-title{
+			font-size: 45px;
+		}
+		&-text{
+			width: 470px;
+		}
+	}
+	.prof{
+		&-block{
+			&__title{
+				display: inline;
+				font-size: 35px;
+			}
+		}
+	}
+	.orientation{
+		&-block{
+			&__item:last-child h1{
+				font-size: 35px;
+			}
+		}
+	}
+	.footer{
+		&-block{
+			&__item:nth-child(2) {
+				flex-direction: column;
+			}
+			&__link{
+				width: 340px;
+			}
+			&__link:first-child{
+				margin-bottom: 10px;
 			}
 		}
 	}
@@ -409,9 +569,6 @@
 		padding-top: 50px;
 		&-block{
 			justify-content: center;
-		}
-		&-item:nth-child(2) {
-			margin-top: 18px;
 		}
 		&-send{
 			align-items: center;
@@ -525,6 +682,44 @@
 	.question{
 		.container{
 			width: 300px;
+		}
+	}
+	.prof{
+		&-block{
+			&__title{
+				font-size: 27px;
+			}
+			&__text{
+				font-size: 23px;
+			}
+		}
+	}
+	.why{
+		&-block{
+			&__item{
+				margin: 0 auto;
+			}
+			&__item:nth-child(2){
+				margin-top: 20px;
+			}
+			&__item:nth-child(3){
+				margin-bottom: 0px;
+			}
+		}
+	}
+	.orientation{
+		&-block{
+			&__item:last-child{
+				h1{
+					font-size: 32px;
+				}
+				a{
+					width: 400px;
+					span{
+						font-size: 16px;
+					}
+				}
+			}
 		}
 	}
 }
