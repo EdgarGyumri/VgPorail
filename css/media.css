@@ -5,8 +5,12 @@
 @media screen and (max-width: 1750px) {
   .prof-block__item:last-child {
     width: 600px; }
+  .prof-block__img {
+    display: none; }
   .orientation-block__item:first-child {
-    width: 600px; } }
+    width: 600px; }
+  .orientation__img {
+    width: 700px; } }
 
 @media screen and (max-width: 1420px) {
   .header-container, .container {
@@ -25,17 +29,17 @@
     display: none; }
   .prof-block__item:last-child {
     display: none; }
-  .orientation-block__item:first-child {
-    width: 400px; }
-  .orientation-block__item:last-child h1 {
-    text-align: right;
-    font-size: 45px; }
-  .orientation-block__item:last-child p {
-    text-align: right; }
-  .orientation-block__item:last-child a {
-    margin-left: auto; }
+  .orientation-block__item:last-child {
+    right: 10%; }
+    .orientation-block__item:last-child h1 {
+      text-align: right;
+      font-size: 45px; }
+    .orientation-block__item:last-child p {
+      text-align: right; }
+    .orientation-block__item:last-child a {
+      margin-left: auto; }
   .orientation__img {
-    width: 550px; }
+    width: 500px; }
   .youtube-block {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -201,7 +205,8 @@
       .orientation-block__item:first-child {
         display: none; }
       .orientation-block__item:last-child {
-        text-align: right; }
+        text-align: right;
+        right: 5%; }
         .orientation-block__item:last-child a {
           position: absolute;
           right: 0; }
@@ -320,6 +325,8 @@
                 justify-content: center; }
   .prof-block__title {
     font-size: 45px; }
+  .orientation-block__item:last-child h1 {
+    padding-top: 80px; }
   .why__title {
     margin-bottom: 70px; }
   .why-block {
@@ -342,9 +349,14 @@
     font-size: 45px; }
   .offer-text {
     width: 470px; }
+  .prof-block__item {
+    margin-left: -40px; }
   .prof-block__title {
     display: inline;
     font-size: 35px; }
+  .orientation-block__item:last-child {
+    right: 0%;
+    padding-top: 80px; }
   .orientation-block__item:last-child h1 {
     font-size: 35px; }
   .footer-block__item:nth-child(2) {
@@ -519,26 +531,54 @@
     margin-top: 20px; }
   .why-block__item:nth-child(3) {
     margin-bottom: 0px; }
-  .orientation-block__item:last-child h1 {
-    font-size: 32px; }
-  .orientation-block__item:last-child a {
-    width: 400px; }
-    .orientation-block__item:last-child a span {
-      font-size: 16px; } }
+  .orientation-block {
+    left: 15%; }
+    .orientation-block__item:last-child {
+      padding-top: 150px;
+      right: 0; }
+      .orientation-block__item:last-child h1 {
+        font-size: 32px; }
+      .orientation-block__item:last-child a {
+        width: 400px; }
+        .orientation-block__item:last-child a span {
+          font-size: 16px; } }
 
 @media screen and (max-width: 410px) {
+  .prof-block__item:first-child {
+    margin-left: 0px; }
   .prof-block__item a {
     height: 60px; }
     .prof-block__item a span {
       font-size: 16px; }
-  .orientation-block__item a {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    height: 60px; }
-    .orientation-block__item a span {
-      font-size: 16px; }
+  .orientation {
+    padding: 50px 0px; }
+    .orientation .container {
+      margin: 0; }
+    .orientation-block__item:first-child {
+      position: static; }
+    .orientation-block__item:last-child {
+      text-align: left;
+      position: static;
+      padding-top: 0; }
+      .orientation-block__item:last-child p {
+        text-align: left;
+        width: 300px; }
+      .orientation-block__item:last-child a {
+        position: static;
+        margin-left: -10px; }
+      .orientation-block__item:last-child h1 {
+        padding-top: 0;
+        font-size: 27px; }
+    .orientation-block__item a {
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      height: 60px; }
+      .orientation-block__item a span {
+        font-size: 16px; }
+    .orientation-block__item:last-child {
+      width: 340px; }
   .question-block__info {
     width: 320px;
     margin: 15px auto 0px; }

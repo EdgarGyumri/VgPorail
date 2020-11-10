@@ -11,6 +11,9 @@
 			&__item:last-child{
 				width: 600px;
 			}
+			&__img{
+				display: none;
+			}
 		}
 	}
 	.orientation{
@@ -18,6 +21,9 @@
 			&__item:first-child{
 				width: 600px;
 			}
+		}
+		&__img{
+			width: 700px;
 		}
 	}
 }
@@ -58,10 +64,8 @@
 	}
 	.orientation{
 		&-block{
-			&__item:first-child{
-				width: 400px;
-			}
 			&__item:last-child{
+				right: 10%;
 				h1{
 					text-align: right;
 					font-size: 45px;
@@ -75,7 +79,7 @@
 			}
 		}
 		&__img{
-			width: 550px;
+			width: 500px;
 		}
 	}
 	.youtube{
@@ -260,6 +264,7 @@
 			}
 			&__item:last-child{
 				text-align: right;
+				right: 5%;
 				a{
 					position: absolute;
 					right: 0;
@@ -430,6 +435,13 @@
 			}
 		}
 	}
+	.orientation{
+		&-block{
+			&__item:last-child h1{
+				padding-top: 80px;
+			}
+		}
+	}
 	.why{
 		&__title{
 			margin-bottom: 70px;
@@ -473,6 +485,9 @@
 	}
 	.prof{
 		&-block{
+			&__item{
+				margin-left: -40px;
+			}
 			&__title{
 				display: inline;
 				font-size: 35px;
@@ -481,6 +496,10 @@
 	}
 	.orientation{
 		&-block{
+			&__item:last-child{
+				right: 0%;
+				padding-top: 80px;
+			}
 			&__item:last-child h1{
 				font-size: 35px;
 			}
@@ -709,7 +728,10 @@
 	}
 	.orientation{
 		&-block{
+			left: 15%;
 			&__item:last-child{
+				padding-top: 150px;
+				right: 0;
 				h1{
 					font-size: 32px;
 				}
@@ -727,6 +749,9 @@
 @media screen and (max-width: 410px) {
 	.prof{
 		&-block{
+			&__item:first-child{
+				margin-left: 0px;
+			}
 			&__item{
 				a{
 					height: 60px;
@@ -738,7 +763,31 @@
 		}
 	}
 	.orientation{
+		padding: 50px 0px;
+		.container{
+			margin: 0;
+		}
 		&-block{
+			&__item:first-child{
+				position: static;
+			}
+			&__item:last-child{
+				text-align: left;
+				position: static;
+				padding-top: 0;
+				p{
+					text-align: left;
+					width: 300px;
+				}
+				a{
+					position: static;
+					margin-left: -10px;
+				}
+				h1{
+					padding-top: 0;
+					font-size: 27px;
+				}
+			}
 			&__item{
 				a{	
 					justify-content: space-between;
@@ -747,6 +796,9 @@
 						font-size: 16px;
 					}
 				}
+			}
+			&__item:last-child{
+				width: 340px;
 			}
 		}
 	}
