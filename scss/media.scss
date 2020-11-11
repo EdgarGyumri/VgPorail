@@ -48,6 +48,7 @@
 	.header{
 		&__link{
 			margin-right: 10px;
+			font-size: 17px;
 		}
 	}
 	.offer{
@@ -339,7 +340,7 @@
 	}
 	.header{
 		&__menu{
-			left: 70px;
+			left: 21%;
 		}
 	}
 	.filtres{
@@ -540,6 +541,7 @@
 	.header{
 		&__link{
 			display: inline-block;
+			line-height: 1.9em;
 		}
 		&-nav{
 			height: 160px;

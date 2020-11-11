@@ -24,7 +24,8 @@
   .navbar-line:first-child, .navbar-line:last-child {
     margin: 0px 10px; }
   .header__link {
-    margin-right: 10px; }
+    margin-right: 10px;
+    font-size: 17px; }
   .offer-img {
     display: none; }
   .prof-block__item:last-child {
@@ -257,7 +258,7 @@
   .navbar-link:last-child {
     top: 95px; }
   .header__menu {
-    left: 70px; }
+    left: 21%; }
   .filtres-header__title {
     font-size: 30px; }
   .filtres-block__title {
@@ -383,7 +384,8 @@
       width: 300px;
       font-size: 18px; }
   .header__link {
-    display: inline-block; }
+    display: inline-block;
+    line-height: 1.9em; }
   .header-nav {
     height: 160px; }
   .header__menu {

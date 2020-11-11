@@ -93,9 +93,39 @@ body {
     font-size: 19px;
     margin-right: 40px;
     display: block; }
+    .header__link-first:hover:after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 3px;
+      background-image: -o-linear-gradient(39deg, #be1622 0%, #d62f3b 100%);
+      background-image: linear-gradient(51deg, #be1622 0%, #d62f3b 100%);
+      position: absolute;
+      top: 30px;
+      left: 0; }
+    .header__link-second:hover:after {
+      content: '';
+      display: block;
+      width: 120px;
+      height: 3px;
+      background-image: -o-linear-gradient(39deg, #be1622 0%, #d62f3b 100%);
+      background-image: linear-gradient(51deg, #be1622 0%, #d62f3b 100%);
+      position: absolute;
+      top: 30px;
+      left: 1px; }
+    .header__link-third:hover:after {
+      content: '';
+      display: block;
+      width: 73px;
+      height: 3px;
+      background-image: -o-linear-gradient(39deg, #be1622 0%, #d62f3b 100%);
+      background-image: linear-gradient(51deg, #be1622 0%, #d62f3b 100%);
+      position: absolute;
+      top: 30px;
+      left: 1px; }
   .header__link:hover {
-    color: #be1622;
-    border-bottom: 2px solid #c31b27; }
+    position: relative;
+    color: #be1622; }
 
 .header:before {
   content: '';
@@ -267,7 +297,7 @@ body {
     .profession-header p {
       padding-left: 25px;
       color: #505050;
-      font-family: "FuturaPT-Medium";
+      font-family: "FuturaPT-Bold";
       font-size: 18px; }
   .profession-body {
     background: #ffffff;
@@ -538,7 +568,7 @@ body {
     margin-bottom: 30px; }
   .filtres-block__title {
     color: #505050;
-    font-family: "Futura PT";
+    font-family: "FuturaPT-Medium";
     font-size: 18px; }
   .filtres-block__skill {
     margin-top: 50px; }
@@ -558,9 +588,13 @@ body {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
+    .filtres-block__skills__item:nth-child(7) {
+      margin-top: 20px !important; }
     .filtres-block__skills__text, .filtres-block__skills__checkbox {
       margin-top: 0;
       padding-top: 0; }
+    .filtres-block__skills__text {
+      font-family: "FuturaPT-Book"; }
   .filtres-block__element {
     display: -webkit-box;
     display: -webkit-flex;
