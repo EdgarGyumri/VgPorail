@@ -47,7 +47,7 @@
 	}
 	.header{
 		&__link{
-			margin-right: 10px;
+			margin-right: 10px !important;
 			font-size: 17px;
 		}
 	}
@@ -90,6 +90,11 @@
 				margin: 10px auto 0px;
 			}
 		}
+		&-item{
+			&__block:last-child{
+				margin: 10px 0;
+			}
+		}
 	}
 	.question{
 		&__title{
@@ -104,6 +109,9 @@
 			}
 		}
 	}
+}
+@media screen and (max-width: 1250px) {
+
 }
 @media screen and (max-width: 1024px) {
 	.container, .header-container{

@@ -762,8 +762,17 @@ body {
 
 .youtube {
   padding: 65px 0px 115px; }
+  .youtube .container {
+    position: relative; }
+  .youtube-category {
+    z-index: 6;
+    cursor: pointer;
+    text-decoration: underline; }
   .youtube-block:first-child p {
     text-decoration: underline; }
+  .youtube-blocks {
+    position: relative;
+    z-index: 1; }
   .youtube-block {
     display: -webkit-box;
     display: -webkit-flex;
@@ -784,6 +793,72 @@ body {
       font-family: "FuturaPT-Book";
       font-size: 20px;
       width: 190px; }
+    .youtube-block__texttwo {
+      text-decoration: none !important; }
+    .youtube-block__element {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .youtube-block__category {
+      display: none;
+      z-index: 5;
+      background: #fff;
+      position: absolute;
+      right: -30px;
+      top: 3%;
+      width: 303px;
+      height: 451px;
+      border-radius: 15px;
+      padding-left: 30px;
+      padding-top: 70px; }
+      .youtube-block__category__check {
+        background: url("../img/checkbox-2.png");
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+        cursor: pointer; }
+      .youtube-block__category__text {
+        color: #505050;
+        font-family: "FuturaPT-Medium";
+        font-size: 22px;
+        line-height: 0em;
+        text-decoration: none !important;
+        cursor: pointer; }
+  .youtube-switch {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #4b4b4b;
+    font-family: "Futura PT - Book";
+    font-size: 20px; }
+    .youtube-switch__previous {
+      margin-right: 30px;
+      cursor: pointer; }
+    .youtube-switch__next {
+      margin-left: 30px;
+      cursor: pointer; }
+    .youtube-switch__pages {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      cursor: pointer; }
+    .youtube-switch__text {
+      margin-right: 10px; }
+    .youtube-switch__text:first-child {
+      color: #be1622; }
+    .youtube-switch__text:last-child {
+      margin-right: 0; }
 
 .question {
   position: relative;
@@ -899,3 +974,9 @@ body {
 
 .navbar-active {
   top: 90px !important; }
+
+.check-active {
+  background: url("../img/checkbox-1.png") !important; }
+
+.category-active {
+  display: block !important; }

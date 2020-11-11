@@ -720,10 +720,22 @@ body{
 
 .youtube{
 	padding: 65px 0px 115px;
+	.container{
+		position: relative;
+	}
+	&-category{
+		z-index: 6;
+		cursor: pointer;
+		text-decoration: underline;
+	}
 	&-block:first-child{
 		p{
 			text-decoration: underline;
 		}
+	}
+	&-blocks{
+		position: relative;
+		z-index: 1;
 	}
 	&-block{
 		display: flex;
@@ -737,6 +749,69 @@ body{
 			font-family: "FuturaPT-Book";
 			font-size: 20px;
 			width: 190px;
+		}
+		&__texttwo{
+			text-decoration: none !important;
+		}
+		&__element{
+			display: flex;
+			align-items: center;
+		}
+		&__category{
+			display: none;
+			z-index: 5;
+			background: #fff;
+			position: absolute;
+			right: -30px;
+			top: 3%;
+			width: 303px;
+			height: 451px;
+			border-radius: 15px;
+			padding-left: 30px;
+			padding-top: 70px;
+			&__check{
+				background: url('../img/checkbox-2.png');
+				width: 18px;
+				height: 18px;
+				margin-right: 10px;
+				cursor: pointer;
+			}
+			&__text{
+				color: #505050;
+				font-family: "FuturaPT-Medium";
+				font-size: 22px;
+				line-height: 0em;
+				text-decoration: none !important;
+				cursor: pointer;
+			}
+		}
+	}
+	&-switch{
+		display: flex;
+		justify-content: center;
+		color: #4b4b4b;
+		font-family: "Futura PT - Book";
+		font-size: 20px;
+		&__previous{
+			margin-right: 30px;
+			cursor: pointer;
+		}
+		&__next{
+			margin-left: 30px;
+			cursor: pointer;
+		}
+		&__pages{
+			display: flex;
+			cursor: pointer;
+		}
+		&__text{
+			margin-right: 10px;
+		}
+		&__text:first-child{
+			color: #be1622;;
+		}
+		&__text:last-child{
+			margin-right: 0;
 		}
 	}
 }
@@ -839,4 +914,11 @@ body{
 
 .navbar-active{
 	top: 90px !important;
+}
+
+.check-active{
+	background: url('../img/checkbox-1.png') !important;
+}
+.category-active{
+	display: block !important;
 }

@@ -24,7 +24,7 @@
   .navbar-line:first-child, .navbar-line:last-child {
     margin: 0px 10px; }
   .header__link {
-    margin-right: 10px;
+    margin-right: 10px !important;
     font-size: 17px; }
   .offer-img {
     display: none; }
@@ -47,6 +47,8 @@
             flex-wrap: wrap; }
     .youtube-block__item:last-child {
       margin: 10px auto 0px; }
+  .youtube-item__block:last-child {
+    margin: 10px 0; }
   .question__title {
     margin-left: 65%; }
   .question .container {
