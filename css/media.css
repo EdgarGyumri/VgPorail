@@ -191,15 +191,6 @@
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .footer-block:last-child{
-          text-align: center;
-     }
-    .footer-block:nth-child(2){
-          text-align: center;
-     }
-    .footer-block:last-child p:first-child {
-        margin-right: 0px;
-    }
     .footer-block__item:last-child {
       text-align: center; }
     .footer-block__item:nth-child(2) {
@@ -380,7 +371,9 @@
   .footer-block__link {
     width: 340px; }
   .footer-block__link:first-child {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  .youtube-block__category {
+    top: 1%; } }
 
 @media screen and (max-width: 480px) {
   .header-container {

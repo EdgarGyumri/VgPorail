@@ -527,6 +527,13 @@
 			}
 		}
 	}
+	.youtube{
+		&-block{
+			&__category{
+				top: 1%;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 480px) {
