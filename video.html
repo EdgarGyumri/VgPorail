@@ -8,6 +8,7 @@
 	<title>Document</title>
 </head>
 <body>
+	<div class="overflow"></div>
 	<header class="header">
 		<div class="header-container">
 			<div class="header-body">
@@ -25,12 +26,14 @@
 						<div class="navbar-line"></div>
 					</div>
 					<div class="navbar-block">
-						<a href="#">
-							<img src="img/icons8-youtube-play.svg" alt="" class="navbar-brand navbar-yout">
-						</a>
-						<a href="#">
-							<img width="44px" height="44px" src="img/icons8-instagram.svg" alt="" class="navbar-brand navbar-inst">
-						</a>
+						<div class="navbar-block__element">
+							<a href="#">
+								<img src="img/icons8-youtube-play.svg" alt="" class="navbar-brand navbar-yout">
+							</a>
+							<a href="#">
+								<img width="44px" height="44px" src="img/icons8-instagram.svg" alt="" class="navbar-brand navbar-inst">
+							</a>
+						</div>
 						<a href="" class="navbar-link">Войти</a>
 					</div>
 				</div>
@@ -175,6 +178,8 @@
 	</footer>
 
 	<script>
+		const body = document.querySelector('body');
+		const overflow = document.querySelector('.overflow');
 		const headerBurger = document.querySelector('.header__burger');
 		const headerNav = document.querySelector('.header-nav');
 		const headerMenu = document.querySelector('.header__menu');
@@ -186,7 +191,10 @@
 
 
 		headerBurger.addEventListener('click', () => {
-			headerNav.classList.toggle('navbar-active')
+			
+			body.classList.toggle('body-active');
+			overflow.classList.toggle('overflow-active');
+
 			if(headerMenu.classList.contains('nav-opened')) {
 				headerMenu.classList.remove('nav-opened')
 				headerBlock.classList.remove('nav-opened')

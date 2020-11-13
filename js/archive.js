@@ -1,3 +1,5 @@
+const body = document.querySelector('body');
+const overflow = document.querySelector('.overflow');
 const headerBurger = document.querySelector('.header__burger');
 const headerNav = document.querySelector('.header-nav');
 const headerMenu = document.querySelector('.header__menu');
@@ -10,7 +12,10 @@ const filtresBlockHeader = document.querySelector('.d');
 
 
 headerBurger.addEventListener('click', () => {
-	headerNav.classList.toggle('navbar-active')
+	
+	body.classList.toggle('body-active');
+	overflow.classList.toggle('overflow-active');
+
 	if(headerMenu.classList.contains('nav-opened')) {
 		headerMenu.classList.remove('nav-opened')
 		headerBlock.classList.remove('nav-opened')

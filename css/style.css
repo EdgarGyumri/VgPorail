@@ -47,7 +47,10 @@
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s; }
 
 /* The rest code */
 .container {
@@ -63,8 +66,7 @@ body {
   position: relative;
   width: 100%;
   top: 0;
-  left: 0;
-  z-index: 50; }
+  left: 0; }
   .header-nav {
     display: -webkit-box;
     display: -webkit-flex;
@@ -970,13 +972,51 @@ body {
           transform: translate(-11px, 0px) rotate(180deg); }
 
 .nav-opened {
-  display: block !important; }
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .navbar-active {
-  top: 90px !important; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translateX(0px) !important;
+      -ms-transform: translateX(0px) !important;
+          transform: translateX(0px) !important; }
 
 .check-active {
   background: url("../img/checkbox-1.png") !important; }
 
 .category-active {
   display: block !important; }
+
+.body-active {
+  -webkit-transform: translateX(-400px);
+      -ms-transform: translateX(-400px);
+          transform: translateX(-400px);
+  overflow: hidden; }
+
+.overflow {
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s; }
+
+.overflow-active {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  opacity: 0.5;
+  z-index: 50; }
