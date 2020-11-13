@@ -69,7 +69,7 @@ headerBurger.addEventListener('click', () => {
 	
 	body.classList.toggle('body-active');
 	overflow.classList.toggle('overflow-active');
-	html.classList.toggle('.html-overflow');
+	html.classList.toggle('html-overflow');
 
 	if(headerMenu.classList.contains('nav-opened')) {
 		headerMenu.classList.remove('nav-opened');

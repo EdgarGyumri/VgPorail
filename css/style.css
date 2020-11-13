@@ -50,7 +50,8 @@ body {
   padding: 0;
   -webkit-transition: .4s;
   -o-transition: .4s;
-  transition: .4s; }
+  transition: .4s;
+  overflow-y: visible !important; }
 
 /* The rest code */
 .container {
@@ -1003,12 +1004,12 @@ body {
   display: block !important; }
 
 .body-active {
-  -webkit-transform: translateX(-400px);
-      -ms-transform: translateX(-400px);
-          transform: translateX(-400px); }
+  -webkit-transform: translateX(-700px);
+      -ms-transform: translateX(-700px);
+          transform: translateX(-700px); }
 
 .html-overflow {
-  overflow: hidden; }
+  overflow-y: hidden; }
 
 .overflow {
   -webkit-transition: .4s;
@@ -1018,7 +1019,7 @@ body {
 .overflow-active {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 30%;
   background: #000;
   opacity: 0.5;
   z-index: 50; }
