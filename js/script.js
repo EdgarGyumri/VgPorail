@@ -1,3 +1,4 @@
+const html = document.querySelector('.html');
 const body = document.querySelector('body');
 const overflow = document.querySelector('.overflow');
 const headerBurger = document.querySelector('.header__burger');
@@ -68,6 +69,7 @@ headerBurger.addEventListener('click', () => {
 	
 	body.classList.toggle('body-active');
 	overflow.classList.toggle('overflow-active');
+	html.classList.toggle('.html-overflow');
 
 	if(headerMenu.classList.contains('nav-opened')) {
 		headerMenu.classList.remove('nav-opened');

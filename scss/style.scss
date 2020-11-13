@@ -929,7 +929,10 @@ body{
 
 .body-active{
     transform: translateX(-400px);
-    overflow: hidden;
+}
+
+.html-overflow{
+	overflow: hidden;
 }
 
 .overflow{

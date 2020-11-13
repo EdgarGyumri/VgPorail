@@ -1005,7 +1005,9 @@ body {
 .body-active {
   -webkit-transform: translateX(-400px);
       -ms-transform: translateX(-400px);
-          transform: translateX(-400px);
+          transform: translateX(-400px); }
+
+.html-overflow {
   overflow: hidden; }
 
 .overflow {
