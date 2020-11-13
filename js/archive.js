@@ -1,4 +1,4 @@
-const html = document.querySelector('.html');
+const html = document.querySelector('html');
 const body = document.querySelector('body');
 const overflow = document.querySelector('.overflow');
 const headerBurger = document.querySelector('.header__burger');
