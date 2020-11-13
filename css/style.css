@@ -48,10 +48,9 @@
 body {
   margin: 0;
   padding: 0;
-  -webkit-transition: .4s;
-  -o-transition: .4s;
-  transition: .4s;
-  overflow-y: visible !important; }
+  -webkit-transition: .4s all ease;
+  -o-transition: .4s all ease;
+  transition: .4s all ease; }
 
 /* The rest code */
 .container {
@@ -983,20 +982,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-.navbar-active {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-transform: translateX(0px) !important;
-      -ms-transform: translateX(0px) !important;
-          transform: translateX(0px) !important; }
-
 .check-active {
   background: url("../img/checkbox-1.png") !important; }
 
@@ -1004,12 +989,11 @@ body {
   display: block !important; }
 
 .body-active {
-  -webkit-transform: translateX(-700px);
-      -ms-transform: translateX(-700px);
-          transform: translateX(-700px); }
+  position: relative;
+  left: -700px; }
 
-.html-overflow {
-  overflow-y: hidden; }
+.navbar-active {
+  right: 0 !important; }
 
 .overflow {
   -webkit-transition: .4s;
@@ -1019,7 +1003,7 @@ body {
 .overflow-active {
   position: absolute;
   width: 100%;
-  height: 30%;
+  height: 100%;
   background: #000;
   opacity: 0.5;
-  z-index: 50; }
+  z-index: 20; }

@@ -19,9 +19,11 @@ headerBurger.addEventListener('click', () => {
 	html.classList.toggle('.html-overflow');
 
 	if(headerMenu.classList.contains('nav-opened')) {
+		headerNav.classList.remove('navbar-active');
 		headerMenu.classList.remove('nav-opened')
 		headerBlock.classList.remove('nav-opened')
 	}else {
+		headerNav.classList.add('navbar-active');
 		headerMenu.classList.add('nav-opened')
 		headerBlock.classList.add('nav-opened')
 	}

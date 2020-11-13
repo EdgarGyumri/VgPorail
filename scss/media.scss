@@ -121,17 +121,16 @@
 		width: 100%;
 		position: relative;
 		&-nav{
-			display: flex;
+			display: block;
 			flex-direction: column;
 			position: fixed;
-			top: 0px;
+			top: 0;
 			right: -700px;
 			width: 700px;
 			height: 100vh;
 			transition: .4s;
 			z-index: -20;
 			background-color: white;
-			flex-direction: column;
 		}
 		&__menu{
 			display: none;
@@ -140,7 +139,6 @@
 			align-items: start;
 		}
 		&-body{
-			position: static;
 			justify-content: space-between;
 			align-items: center;
 			z-index: 30;
@@ -153,7 +151,6 @@
 			width: 30px;
 			height: 2px;
 			background-color: black;
-			position: relative;
 		}
 		&__burger:before{
 			content: '';
@@ -353,9 +350,12 @@
 			right: -500px;
 			width: 500px;
 		}
+		&-body{
+			width: 500px;
+		}
 	}
 	.body-active{
-	    transform: translateX(-500px);
+	    left: -400px;
 	}
 	.profession{
 		&-item{
@@ -506,7 +506,7 @@
 		width: 500px;
 	}
 	.body-active{
-		transform: translateX(-400px);
+		left: -400px;
 	}
 	.header{
 		&-nav{
@@ -579,12 +579,15 @@
 		width: 330px;
 	}
 	.body-active{
-		transform: translateX(-300px);
+		left: -300px;
 	}
 	.header{
 		&-nav{
 			width: 300px;
 			right: -300px;
+		}
+		&-body{
+			width: 340px;
 		}
 	}
 	.container{
@@ -606,9 +609,6 @@
 		}
 	}
 	.navbar{
-		&-active{
-			top: 65px !important;
-		}
 		&-img{
 			width: 80%;
 		}
@@ -799,7 +799,7 @@
 
 @media screen and (max-width: 410px) {
 	.body-active{
-		transform: translateX(-280px) ;
+		left: -280px;
 	}
 	.header{
 		&-nav{
