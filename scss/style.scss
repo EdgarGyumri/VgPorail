@@ -92,6 +92,7 @@ body{
 .header-container{
 	width: 1250px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .header{
@@ -107,6 +108,58 @@ body{
 		display: flex;
 		position: relative;
 		z-index: 2;
+	}
+	&-data{
+		display: none;
+		position: absolute;
+		z-index: 10;
+		right: 0;
+		top: 93px;
+		background: #f4f4f4;
+		padding: 20px 90px 20px 35px;
+		border-radius: 0 0 15px 15px;
+		&__title{
+			color: #505050;
+			font-family: "FuturaPT-Demi";
+			font-size: 27px;
+			line-height: 0;
+		}
+		&__mail{
+			color: #4b4b4b;
+			font-family: "FuturaPT-Book";
+			font-size: 19px;
+			line-height: 0;
+			padding-left: 2px;
+		}
+		&__item:nth-child(2) {
+			padding: 30px 0px;
+			display: flex;
+			flex-direction: column;
+			line-height: 2em;
+		}
+		&__link, &__logout{
+			color: #505050;
+			font-family: "FuturaPT-Medium";
+			font-size: 22px;
+			text-decoration: none;
+		}
+		&__logout{
+			cursor: pointer;
+		}
+	}
+	&-cabinet{
+		display: none;
+		cursor: pointer;
+		padding: 15px 30px;
+		background: #f5f5f5;
+		position: absolute;
+		right: 0;
+		&__item{
+			padding: 14px 20px;
+			background-image: linear-gradient(51deg, #be1622 0%, #d62f3b 100%);
+			box-shadow: 0 15px 27px rgba(190, 22, 34, 0.15);
+			border-radius: 26px;
+		}
 	}
 	&__menu{
 		display: flex;
@@ -546,6 +599,7 @@ body{
 			color: #505050;
 			font-family: "FuturaPT-Medium";
 			font-size: 18px;
+			margin-top: 0;
 		}
 		&__skill{
 			margin-top: 50px;
@@ -556,6 +610,10 @@ body{
 			background-color: #fff;
 			border-radius: 15px;
 			padding-left: 25px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 18px 0px 18px 25px;
 			&__checkbox{
 				width: 18px;
 				height: 18px;
@@ -570,6 +628,7 @@ body{
 			}
 			&__text, &__checkbox{
 				margin-top: 0;
+				margin-bottom: 0;
 				padding-top: 0;
 			}
 			&__text{
@@ -941,4 +1000,20 @@ body{
 	background: #000;
 	opacity: 0.5;
 	z-index: 20;
+}
+
+.data-active{
+	display: block !important;
+}
+
+.navbar-link__disabled{
+	display: none !important;
+}
+
+.navbar-block__active{
+	margin-right: auto;
+}
+
+.display-none{
+	display: none;
 }

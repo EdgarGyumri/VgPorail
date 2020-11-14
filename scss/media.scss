@@ -187,6 +187,13 @@
 		&__link:hover{
 			color: #fff;
 		}
+		&-data{
+			top: 350px !important;
+			left: 0;
+		}
+		&-cabinet{
+			top: 221px;
+		}
 	}
 	.navbar{
 		display: block;
@@ -218,6 +225,10 @@
 		}
 		&-line{
 			display: none;
+		}
+		&-link{
+			width: 90%;
+			text-align: center;
 		}
 	}
 
@@ -347,11 +358,11 @@
 	}
 	.header{
 		&-nav{
-			right: -500px;
-			width: 500px;
+			right: -400px;
+			width: 400px;
 		}
 		&-body{
-			width: 500px;
+			width: 600px;
 		}
 	}
 	.body-active{
@@ -513,6 +524,9 @@
 			width: 400px;
 			right: -400px;
 		}
+		&-body{
+			width: 470px;
+		}
 	}
 	.offer{
 		&-title{
@@ -572,6 +586,13 @@
 			}
 		}
 	}
+	.filtres{
+		&-block{
+			&__title{
+				font-size: 15px;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -588,6 +609,11 @@
 		}
 		&-body{
 			width: 340px;
+		}
+		&-data{
+			&__title{
+				line-height: 1.2em;
+			}
 		}
 	}
 	.container{
@@ -808,6 +834,9 @@
 		}
 		&__link{
 			font-size: 16px;
+		}
+		&-body{
+			width: 320px;
 		}
 	}
 	.prof{

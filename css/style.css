@@ -59,7 +59,8 @@ body {
 
 .header-container {
   width: 1250px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
 
 .header {
   padding: 10px 0px;
@@ -79,6 +80,59 @@ body {
     display: flex;
     position: relative;
     z-index: 2; }
+  .header-data {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 93px;
+    background: #f4f4f4;
+    padding: 20px 90px 20px 35px;
+    border-radius: 0 0 15px 15px; }
+    .header-data__title {
+      color: #505050;
+      font-family: "FuturaPT-Demi";
+      font-size: 27px;
+      line-height: 0; }
+    .header-data__mail {
+      color: #4b4b4b;
+      font-family: "FuturaPT-Book";
+      font-size: 19px;
+      line-height: 0;
+      padding-left: 2px; }
+    .header-data__item:nth-child(2) {
+      padding: 30px 0px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      line-height: 2em; }
+    .header-data__link, .header-data__logout {
+      color: #505050;
+      font-family: "FuturaPT-Medium";
+      font-size: 22px;
+      text-decoration: none; }
+    .header-data__logout {
+      cursor: pointer; }
+  .header-cabinet {
+    display: none;
+    cursor: pointer;
+    padding: 15px 30px;
+    background: #f5f5f5;
+    position: absolute;
+    right: 0; }
+    .header-cabinet__item {
+      padding: 14px 20px;
+      background-image: -o-linear-gradient(39deg, #be1622 0%, #d62f3b 100%);
+      background-image: linear-gradient(51deg, #be1622 0%, #d62f3b 100%);
+      -webkit-box-shadow: 0 15px 27px rgba(190, 22, 34, 0.15);
+              box-shadow: 0 15px 27px rgba(190, 22, 34, 0.15);
+      border-radius: 26px; }
   .header__menu {
     display: -webkit-box;
     display: -webkit-flex;
@@ -571,7 +625,8 @@ body {
   .filtres-block__title {
     color: #505050;
     font-family: "FuturaPT-Medium";
-    font-size: 18px; }
+    font-size: 18px;
+    margin-top: 0; }
   .filtres-block__skill {
     margin-top: 50px; }
   .filtres-block__skills {
@@ -579,7 +634,21 @@ body {
     height: 120px;
     background-color: #fff;
     border-radius: 15px;
-    padding-left: 25px; }
+    padding-left: 25px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 18px 0px 18px 25px; }
     .filtres-block__skills__checkbox {
       width: 18px;
       height: 18px;
@@ -594,6 +663,7 @@ body {
       margin-top: 20px !important; }
     .filtres-block__skills__text, .filtres-block__skills__checkbox {
       margin-top: 0;
+      margin-bottom: 0;
       padding-top: 0; }
     .filtres-block__skills__text {
       font-family: "FuturaPT-Book"; }
@@ -1007,3 +1077,15 @@ body {
   background: #000;
   opacity: 0.5;
   z-index: 20; }
+
+.data-active {
+  display: block !important; }
+
+.navbar-link__disabled {
+  display: none !important; }
+
+.navbar-block__active {
+  margin-right: auto; }
+
+.display-none {
+  display: none; }

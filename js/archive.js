@@ -5,6 +5,10 @@ const headerBurger = document.querySelector('.header__burger');
 const headerNav = document.querySelector('.header-nav');
 const headerMenu = document.querySelector('.header__menu');
 const headerBlock = document.querySelector('.navbar-block');
+const headerData = document.querySelector('.header-data');
+const headerCabinet = document.querySelector('.header-cabinet');
+const headerDataLogout = document.querySelector('.header-data__logout')
+const navbarLink = document.querySelector('.navbar-link');
 const filtresBlock = document.querySelector('.filtres-block');
 const allProfessionImgs = document.querySelectorAll('.profession-img');
 const allAccardeonHeaders = document.querySelectorAll('.filtres-block__header');
@@ -79,4 +83,28 @@ function collapseMakerThree(event) {
 
 filtresBlock.addEventListener('click', event => {
 	collapseMakerThree(event)
+})
+
+navbarLink.addEventListener('click', e => {
+
+	e.preventDefault();
+	navbarLink.classList.add('navbar-link__disabled');
+	headerCabinet.classList.add('data-active');
+	navbarBlockElement.classList.add('navbar-block__active')
+
+})
+
+headerCabinet.addEventListener('click', () => {
+
+	headerData.classList.toggle('data-active');
+
+})
+
+headerDataLogout.addEventListener('click', () => {
+
+	navbarLink.classList.remove('navbar-link__disabled')
+	headerData.classList.remove('data-active');
+	headerCabinet.classList.remove('data-active');
+	navbarBlockElement.classList.remove('navbar-block__active')
+
 })

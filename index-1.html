@@ -35,6 +35,25 @@
 							</a>
 						</div>
 						<a href="" class="navbar-link">Войти</a>
+						<div class="header-cabinet" style="padding: 32px 30px">
+							<div class="header-cabinet__item">
+								<img src="img/icons8_person.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="header-data" style="top: 110px; background: #fff">
+						<div class="header-data__item">
+							<h3 class="header-data__title">Коликов Николай</h3>
+							<p class="header-data__mail">kolikov.nikolay@mail.ru</p>
+						</div>
+						<div class="header-data__item">
+							<a href="#" class="header-data__link">Мои данные</a>
+							<a href="#" class="header-data__link">Бесплатные продукты</a>
+							<a href="#" class="header-data__link">Платные продукты</a>
+						</div>
+						<div class="header-data__item">
+							<p class="header-data__logout">Выйти</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -211,6 +230,12 @@
 		const headerNav = document.querySelector('.header-nav');
 		const headerMenu = document.querySelector('.header__menu');
 		const headerBlock = document.querySelector('.navbar-block');
+		const headerData = document.querySelector('.header-data');
+		const headerCabinet = document.querySelector('.header-cabinet');
+		const headerDataLogout = document.querySelector('.header-data__logout')
+		const navbarLink = document.querySelector('.navbar-link');
+		const navbarBlockElement = document.querySelector('.navbar-block__element');
+
 
 		headerBurger.addEventListener('click', () => {
 
@@ -227,6 +252,30 @@
 				headerMenu.classList.add('nav-opened')
 				headerBlock.classList.add('nav-opened')
 			}
+		})
+
+		navbarLink.addEventListener('click', e => {
+
+			e.preventDefault();
+			navbarLink.classList.add('navbar-link__disabled');
+			headerCabinet.classList.add('data-active');
+			navbarBlockElement.classList.add('navbar-block__active')
+
+		})
+
+		headerCabinet.addEventListener('click', () => {
+
+			headerData.classList.toggle('data-active');
+
+		})
+
+		headerDataLogout.addEventListener('click', () => {
+
+			navbarLink.classList.remove('navbar-link__disabled')
+			headerData.classList.remove('data-active');
+			headerCabinet.classList.remove('data-active');
+			navbarBlockElement.classList.remove('navbar-block__active')
+
 		})
 	</script>
 </body>
