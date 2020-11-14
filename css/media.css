@@ -432,6 +432,10 @@
     width: 340px; }
   .header-data__title {
     line-height: 1.2em; }
+  .header-data__item:nth-child(2) {
+    padding: 10px 0px 0px; }
+  .header-cabinet {
+    top: 185px; }
   .container {
     width: 300px; }
   .offer {
@@ -443,6 +447,10 @@
       font-size: 18px; }
   .header__link {
     font-size: 20px; }
+  .header-data {
+    top: 270px !important;
+    background: transparent !important;
+    left: -20px; }
   .navbar-img {
     width: 80%; }
   .instruction {

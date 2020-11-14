@@ -1085,7 +1085,8 @@ body {
   display: none !important; }
 
 .navbar-block__active {
-  margin-right: auto; }
+  margin-right: auto;
+  margin-top: 0 !important; }
 
 .display-none {
   display: none; }

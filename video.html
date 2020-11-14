@@ -254,7 +254,9 @@
 		headerCabinet.addEventListener('click', () => {
 
 			headerData.classList.toggle('data-active');
-			youtubeCategory.classList.toggle('display-none');
+			if(window.innerWidth > 1024) {
+				youtubeCategory.classList.toggle('display-none');
+			}
 
 		})
 

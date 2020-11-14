@@ -614,6 +614,12 @@
 			&__title{
 				line-height: 1.2em;
 			}
+			&__item:nth-child(2){
+				padding: 10px 0px 0px;
+			}
+		}
+		&-cabinet{
+			top: 185px;
 		}
 	}
 	.container{
@@ -632,6 +638,11 @@
 	.header{
 		&__link{
 			font-size: 20px;
+		}
+		&-data{
+			top: 270px !important;
+			background: transparent !important;
+			left: -20px;
 		}
 	}
 	.navbar{
