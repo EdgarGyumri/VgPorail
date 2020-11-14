@@ -9,6 +9,7 @@ const headerData = document.querySelector('.header-data');
 const headerCabinet = document.querySelector('.header-cabinet');
 const headerDataLogout = document.querySelector('.header-data__logout')
 const navbarLink = document.querySelector('.navbar-link');
+const navbarBlockElement = document.querySelector('.navbar-block__element');
 const filtresBlock = document.querySelector('.filtres-block');
 const allProfessionImgs = document.querySelectorAll('.profession-img');
 const allAccardeonHeaders = document.querySelectorAll('.filtres-block__header');
@@ -90,7 +91,7 @@ navbarLink.addEventListener('click', e => {
 	e.preventDefault();
 	navbarLink.classList.add('navbar-link__disabled');
 	headerCabinet.classList.add('data-active');
-	navbarBlockElement.classList.add('navbar-block__active')
+	navbarBlockElement.classList.add('navbar-block__active');
 
 })
 
@@ -105,6 +106,7 @@ headerDataLogout.addEventListener('click', () => {
 	navbarLink.classList.remove('navbar-link__disabled')
 	headerData.classList.remove('data-active');
 	headerCabinet.classList.remove('data-active');
-	navbarBlockElement.classList.remove('navbar-block__active')
+	navbarBlockElement.classList.remove('navbar-block__active');
+	youtubeCategory.classList.remove('display-none');
 
 })
