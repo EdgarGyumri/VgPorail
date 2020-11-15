@@ -14,8 +14,7 @@ const filtresBlock = document.querySelector('.filtres-block');
 const allProfessionImgs = document.querySelectorAll('.profession-img');
 const allAccardeonHeaders = document.querySelectorAll('.filtres-block__header');
 const allAccardeonBodys = document.querySelectorAll('.profession-body');
-const filtresBlockHeader = document.querySelector('.d');
-
+const professionImg = document.querySelector('.profession-img');
 
 headerBurger.addEventListener('click', () => {
 	
@@ -78,6 +77,16 @@ function collapseMakerThree(event) {
 			target.parentNode.classList.toggle('border');
 			target.parentNode.lastElementChild.classList.toggle('transform');
 		}
+	}else if(target.classList.contains('profession-img')) {
+		allAccardeonBodys.forEach(item => {
+			item.classList.remove('filtres-opened')
+		})
+		allAccardeonHeaders.forEach(item => {
+			item.classList.remove('border')
+		})
+		allProfessionImgs.forEach(item => {
+			item.classList.remove('transform')
+		})
 	}
 }
 
