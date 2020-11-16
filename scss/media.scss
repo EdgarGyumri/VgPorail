@@ -114,7 +114,7 @@
 	}
 	.question{
 		&__title{
-			margin-left: 65%;
+			margin-left: 48%;
 		}
 		.container{
 			width: 1000px;
@@ -122,6 +122,9 @@
 		&-block{
 			&__item:last-child{
 				display: none;
+			}
+			&__item:nth-child(2) {
+				margin: 0 auto;
 			}
 		}
 	}
@@ -394,7 +397,7 @@
 			width: 800px;
 		}
 		&__title{
-			margin-left: 58%;
+			margin-left: 50%;
 			font-size: 34px;
 		}
 		&-block{

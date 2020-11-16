@@ -62,11 +62,13 @@
   .youtube-item__block:last-child {
     margin: 10px 0; }
   .question__title {
-    margin-left: 65%; }
+    margin-left: 48%; }
   .question .container {
     width: 1000px; }
   .question-block__item:last-child {
     display: none; }
+  .question-block__item:nth-child(2) {
+    margin: 0 auto; }
   .cabinet-content__item {
     width: 470px; } }
 
@@ -314,7 +316,7 @@
   .question .container {
     width: 800px; }
   .question__title {
-    margin-left: 58%;
+    margin-left: 50%;
     font-size: 34px; }
   .question-block__item:last-child {
     display: none; }
