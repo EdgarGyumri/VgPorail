@@ -10,9 +10,11 @@
 		&-block{
 			&__item:last-child{
 				width: 600px;
+				top: 70px;
 			}
 			&__img{
-				display: none;
+				width: 600px;
+				height: 400px;
 			}
 		}
 	}
@@ -59,7 +61,12 @@
 	.prof{
 		&-block{
 			&__item:last-child{
-				display: none;
+				width: 400px;
+				top: 120px;
+			}
+			&__img{
+				width: 400px;
+				height: 300px;
 			}
 		}
 	}
@@ -299,26 +306,51 @@
 		}
 	}
 	.prof{
+		padding-bottom: 440px;
 		&-block{
+			&__item:first-child{
+				text-align: center;
+				margin: 0 auto;
+				a{
+					margin: 0 auto;
+				}
+			}
 			&__item:last-child{
-				display: none;
+				top: 500px;
+				width: 600px;
+				right: calc(50% - 300px);
+				img{
+					width: 600px;
+					height: 400px;
+				}
 			}
 		}
 	}
 	.orientation{
 		padding-top: 150px;
+		padding-bottom: 650px;
 		&-block{
 			position: relative;
 			justify-content: end;
 			&__item:first-child{
-				display: none;
+				width: 500px;
+				right: calc(50% - 250px);
+				left: auto;
+				top: 250px;
+				img{
+					width: 500px;
+					height: 300px;
+				}
 			}
 			&__item:last-child{
-				text-align: right;
-				right: 5%;
+				text-align: center;
+				margin: 0 auto;
+				padding-top: 100px;
 				a{
-					position: absolute;
-					right: 0;
+					margin: 0 auto;
+				}
+				h1, p{
+					text-align: center;
 				}
 			}
 		}
@@ -336,8 +368,14 @@
 			flex-wrap: wrap;
 		}
 		&-block{
+			&__item{
+				margin: 0 auto;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
 			&__item:last-child{
-				margin: 20px 0px;
+				margin: 20px auto;
 			}
 		}
 	}
@@ -489,6 +527,7 @@
 		}
 	}
 	.prof{
+		padding-bottom: 500px;
 		&-block{
 			&__title{
 				font-size: 45px;
@@ -497,8 +536,14 @@
 	}
 	.orientation{
 		&-block{
-			&__item:last-child h1{
-				padding-top: 80px;
+			&__item:first-child{
+				top: 270px;
+			}
+			&__item:last-child{
+				right: auto;
+				h1{
+					padding-top: 80px;
+				}
 			}
 		}
 	}
@@ -522,7 +567,7 @@
 	.youtube{
 		&-block{
 			&__item{
-				margin: 0 auto;
+				width: 250px;
 			}
 		}
 	}
@@ -568,9 +613,19 @@
 		}
 	}
 	.prof{
+		padding-bottom: 350px;
 		&-block{
 			&__item{
 				margin-left: -40px;
+			}
+			&__item:last-child{
+				width: 450px;
+				right: calc(50% - 225px);
+				top: 450px;
+				img{
+					width: 450px;
+					height: 270px;
+				}
 			}
 			&__title{
 				display: inline;
@@ -584,13 +639,24 @@
 		}
 	}
 	.orientation{
+		padding-top: 150px;
 		&-block{
+			&__item:first-child{
+				width: 400px;
+				right: calc(50% - 200px);
+				top: 220px;
+				img{
+					width: 400px;
+					height: 250px;
+				}
+			}
 			&__item:last-child{
 				right: 0%;
 				padding-top: 80px;
-			}
-			&__item:last-child h1{
-				font-size: 35px;
+				h1{
+					font-size: 35px;
+					margin-top: 200px;
+				}
 			}
 		}
 	}
@@ -830,6 +896,14 @@
 			&__text{
 				font-size: 23px;
 			}
+			&__item:last-child{
+				width: 350px;
+				right: calc(50% - 175px);
+				img{
+					 width: 350px;
+					 height: 200px;
+				}
+			}
 		}
 	}
 	.why{
@@ -847,7 +921,15 @@
 	}
 	.orientation{
 		&-block{
-			left: 15%;
+			&__item:first-child{
+				width: 350px;
+				right: calc(50% - 175px);
+				top: 250px;
+				img{
+					width: 350px;
+					height: 200px;
+				}
+			}
 			&__item:last-child{
 				padding-top: 150px;
 				right: 0;
@@ -856,6 +938,7 @@
 				}
 				a{
 					width: 400px;
+					justify-content: center;
 					span{
 						font-size: 16px;
 					}
@@ -893,57 +976,48 @@
 		}
 	}
 	.prof{
+		padding-top: 100px;
+		padding-bottom: 300px;
 		&-block{
-			&__item:first-child{
-				margin-left: 0px;
-			}
 			&__item{
 				a{
 					height: 60px;
 					span{
 						font-size: 16px;
 					}
+				}
+			}
+			&__item:first-child{
+				margin-left: 0px;
+			}
+			&__item:last-child{
+				width: 300px;
+				right: calc(50% - 150px);
+				top: 370px;
+				img{
+					width: 300px;
+					height: 180px;
 				}
 			}
 		}
 	}
 	.orientation{
-		padding: 50px 0px;
-		.container{
-			margin: 0;
-		}
+		padding-bottom: 400px;
 		&-block{
 			&__item:first-child{
-				position: static;
+				width: 300px;
+				right: calc(50% - 150px);
+				top: 180px;
+				img{
+					width: 300px;
+					height: 180px;
+				}
 			}
 			&__item:last-child{
-				text-align: left;
-				position: static;
 				padding-top: 0;
-				p{
-					text-align: left;
-					width: 300px;
-				}
-				a{
-					position: static;
-					margin-left: -10px;
-				}
 				h1{
-					padding-top: 0;
 					font-size: 27px;
 				}
-			}
-			&__item{
-				a{	
-					justify-content: space-between;
-					height: 60px;
-					span{
-						font-size: 16px;
-					}
-				}
-			}
-			&__item:last-child{
-				width: 340px;
 			}
 		}
 	}
