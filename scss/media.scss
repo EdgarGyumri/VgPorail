@@ -46,11 +46,20 @@
 		&-line:first-child, &-line:last-child{
 			margin: 0px 10px;
 		}
+		&-link{
+			padding: 13px 35px;
+		}
 	}
 	.header{
 		&__link{
 			margin-right: 10px !important;
 			font-size: 17px;
+		}
+		&__menu{
+			margin: 0px 20px;
+		}
+		&-cabinet{
+			right: 0;
 		}
 	}
 	.offer{
@@ -132,6 +141,9 @@
 	.header{
 		width: 100%;
 		position: relative;
+		&__menu{
+			margin: 0;
+		}
 		&-nav{
 			display: block;
 			flex-direction: column;
@@ -243,16 +255,14 @@
 			text-align: center;
 		}
 	}
-
 	.offer{
 		&-title{
 			line-height: 1.5em;
 		}
 		&-img{
-			display: none;
+			width: 750px;
 		}
 	}
-
 	.instruction{
 		&-block{
 			flex-direction: column;
@@ -424,6 +434,11 @@
 	}
 	.body-active{
 	    left: -400px;
+	}
+	.offer{
+		&-img{
+			width: 550px;
+		}
 	}
 	.profession{
 		&-item{
@@ -611,6 +626,9 @@
 		&-text{
 			width: 470px;
 		}
+		&-img{
+			width: 450px;
+		}
 	}
 	.prof{
 		padding-bottom: 350px;
@@ -730,6 +748,9 @@
 		&-text{
 			width: 300px;
 			font-size: 18px;
+		}
+		&-img{
+			width: 320px;
 		}
 	}
 	.header{

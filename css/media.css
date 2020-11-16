@@ -25,9 +25,15 @@
     margin-left: 10px; }
   .navbar-line:first-child, .navbar-line:last-child {
     margin: 0px 10px; }
+  .navbar-link {
+    padding: 13px 35px; }
   .header__link {
     margin-right: 10px !important;
     font-size: 17px; }
+  .header__menu {
+    margin: 0px 20px; }
+  .header-cabinet {
+    right: 0; }
   .offer-img {
     width: 1000px; }
   .prof-block__item:last-child {
@@ -70,6 +76,8 @@
   .header {
     width: 100%;
     position: relative; }
+    .header__menu {
+      margin: 0; }
     .header-nav {
       display: block;
       -webkit-box-orient: vertical;
@@ -186,7 +194,7 @@
   .offer-title {
     line-height: 1.5em; }
   .offer-img {
-    display: none; }
+    width: 750px; }
   .instruction-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -338,6 +346,8 @@
     width: 600px; }
   .body-active {
     left: -400px; }
+  .offer-img {
+    width: 550px; }
   .profession-item {
     margin: 0 auto; }
   .profession-title {
@@ -472,6 +482,8 @@
     font-size: 45px; }
   .offer-text {
     width: 470px; }
+  .offer-img {
+    width: 450px; }
   .prof {
     padding-bottom: 350px; }
     .prof-block__item {
@@ -545,6 +557,8 @@
     .offer-text {
       width: 300px;
       font-size: 18px; }
+    .offer-img {
+      width: 320px; }
   .header__link {
     font-size: 20px; }
   .header-data {
