@@ -114,14 +114,26 @@
 	}
 	.question{
 		&__title{
-			margin-left: 48%;
+			margin-left: 37%;
 		}
 		.container{
 			width: 1000px;
 		}
 		&-block{
+			align-items: center;
+			&__item:first-child{
+				img{
+					width: 200px;
+				}
+			}
 			&__item:last-child{
-				display: none;
+				width: 150px;
+				img{
+					width: 300px;
+					position: absolute;
+					right: 0;
+					top: 40%;
+				}
 			}
 			&__item:nth-child(2) {
 				margin: 0 auto;
