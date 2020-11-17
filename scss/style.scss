@@ -96,7 +96,6 @@ body{
 }
 
 .header{
-	padding: 10px 0px;
 	position: relative;
 	width: 100%;
 	top: 0;
@@ -222,6 +221,9 @@ body{
 .navbar{
 	display: flex;
 	justify-content: space-between;
+	&-logo{
+		margin-top: 10px;
+	}
 	&-item{
 		display: flex;
 	}

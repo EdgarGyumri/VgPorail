@@ -63,7 +63,6 @@ body {
   position: relative; }
 
 .header {
-  padding: 10px 0px;
   position: relative;
   width: 100%;
   top: 0;
@@ -201,6 +200,8 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  .navbar-logo {
+    margin-top: 10px; }
   .navbar-item {
     display: -webkit-box;
     display: -webkit-flex;
